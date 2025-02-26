@@ -7,7 +7,7 @@
     <style>
         body {
             background-color: #ffffff;
-            font-family:Helvetica;
+            font-family: Helvetica, sans-serif;
             color: #000;
             margin: 0;
             padding: 0;
@@ -19,6 +19,25 @@
             padding: 25px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
+        }
+        .nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .nav button, .social-buttons a {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .nav button:hover, .social-buttons a:hover {
+            background-color: gray;
         }
         .header {
             text-align: center;
@@ -65,11 +84,30 @@
             color: white;
             border-radius: 5px;
         }
+        .social-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-buttons img {
+            width: 20px;
+            height: 20px;
+            margin-right: 9px;
+            text-align: center;
+        }
+
     </style>
 </head>
+
 <body>
 
 <div class="container">
+    <div class="nav">
+        <button onclick="location.href='#about'">About</button>
+        <button onclick="location.href='#education'">Education</button>
+        <button onclick="location.href='#experience'">Experience</button>
+        <button onclick="location.href='#skills'">Skills</button>
+    </div>
+
     <div class="header">
         <h1>Curriculum Vitae</h1>
         <h2>Muh Khalifman Ali Sayyidina</h2>
@@ -79,24 +117,19 @@
         <img src="fotoPribadi2new.jpg" alt="Foto Profil">
     </div>
 
-    <div class="section">
+    <div class="section" id="about">
         <h2>About me</h2>
-        <p>My name is Muh Khalifman. I am currently studying Information Systems at the Faculty of Computer Science, Brawijaya University. </p>
- 
-        <p> My passion for technology and problem solving has led me to this field, where I am eager to explore the intersection of business and technology.
-             In my academic career, I aim to build a solid foundation in data management, systems analysis, and software development.
-            I am particularly interested in how information systems can drive business performance and innovation. </p>
-             
-        <p> I am committed to gaining practical experience through projects, internships, and co-ops that allow me to apply theoretical knowledge to real-world challenges.
-            My career goal is to become a Cyber Security or IT consultant, where I can help organizations optimize operations and achieve strategic goals through innovative technology solutions. </p>
+        <p>My name is Muh Khalifman. I'm currently studying Information Systems at the Faculty of Computer Science, Brawijaya University.</p>
+        <p>My passion for technology and problem solving has led me to this field, where I am eager to explore the intersection of business and technology.</p>
             
-        <p> I am also interested in exploring opportunities in Cyber Security and UI/UX Design, as these areas are critical to successful information systems implementation. </p>
+        <p>In my academic career, I aim to build a solid foundation in systems analysis, software development, and cybersecurity, I am particularly interested in how information systems can drive business performance and innovation.</p>
+        <p>I am committed to gaining practical experience through projects, internships, and co-ops that  allow me to apply theoretical knowledge to real-world challenges.</p>
             
-        <p> I am always looking to connect with like-minded people, industry experts, and potential collaborators.
-            If you share similar interests or have an opportunity that aligns with my goals, I would love to connect and learn more.</p>
+        <p>My career goal is to become a systems analyst, IT consultant, or cybersecurity specialists, where I can help organizations optimize operations and achieve strategic goals through innovative technology solutions.</p>
+        <p>I am also interested in exploring opportunities in data analytics and project management, as these areas are critical to  successful  information systems implementation.</p>
     </div>
 
-    <div class="section">
+    <div class="section" id="education">
         <h2>Education</h2>
         <ul>
             <li>Universitas Brawijaya - Sistem Informasi</li>
@@ -104,7 +137,7 @@
         </ul>
     </div>
 
-    <div class="section">
+    <div class="section" id="experience">
         <h2>Experience</h2>
         <table>
             <tr>
@@ -120,7 +153,7 @@
         </table>
     </div>
 
-    <div class="section">
+    <div class="section" id="skills">
         <h2>Skills</h2>
         <ul>
             <li>Computer Literacy</li>
@@ -128,6 +161,15 @@
             <li>Basic Programming</li>
             <li>Time Management</li>
         </ul>
+    </div>
+
+    <div class="social-buttons">
+        <a href="https://www.instagram.com/khlifmnn" target="_blank">
+            <img src="Instagram_logoo-removebg-preview.png" alt="Instagram"> Instagram
+        </a>
+        <a href="https://www.linkedin.com/in/muh-khalifman-bb9baa306/" target="_blank">
+            <img src="linkedin_logo-removebg-preview.png" alt="LinkedIn"> LinkedIn
+        </a>        
     </div>
 
     <div class="footer">
